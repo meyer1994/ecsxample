@@ -11,4 +11,4 @@ python:
 script:
   - docker-compose up --detach
   - sleep 5
-  - curl -X POST 'http://localhost:8000/users' -d '{"username": "user", "password": "pass"}'
+  - "curl -X POST 'http://localhost:8000/users' -d '{\"username\": \"user\", \"password\": \"pass\"}'"
