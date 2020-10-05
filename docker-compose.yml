@@ -5,8 +5,8 @@ services:
     build: '.'
     ports:
       - '8000:8000'
-    depends_on:
-      - db
+    environment:
+      - 'POSTGRES=postgres://postgres@db'
 
   db:
     image: postgres

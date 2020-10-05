@@ -2,8 +2,9 @@ import orm
 import databases
 import sqlalchemy
 
+from . config import Config
 
-database = databases.Database('postgres://postgres@db')
+database = databases.Database(Config.postgres)
 metadata = sqlalchemy.MetaData()
 
 
@@ -17,6 +18,5 @@ class User(orm.Model):
     password = orm.String(max_length=100)
 
 
-url = str(database.url)
-engine = sqlalchemy.create_engine(url)
+engine = sqlalchemy.create_engine(Config.postgres)
 metadata.create_all(engine)
