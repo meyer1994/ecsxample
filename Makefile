@@ -1,3 +1,4 @@
+.PHONY: terraform
 
 terraform:
 	docker run --rm -it \
