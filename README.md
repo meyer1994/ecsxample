@@ -1,5 +1,7 @@
 # ECS Example
 
+[![Build Status](https://travis-ci.com/meyer1994/ecsxample.svg?branch=master)](https://travis-ci.com/meyer1994/ecsxample)
+
 A simple, multi containered service running on AWS [ECS][1]
 
 ## About
