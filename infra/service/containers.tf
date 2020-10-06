@@ -30,7 +30,7 @@ module "service" {
     environment = [
       {
         name  = "POSTGRES"
-        value = "postgres://postgres@db"
+        value = "postgres://postgres@localhost"
       }
     ]
 }
