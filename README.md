@@ -23,15 +23,9 @@ that, you must have your AWS credentials already set up. From inside the `infra`
 directory, run the following:
 
 ```bash
-terraform init cluster
+terraform init
 terraform apply --auto-approve
-terraform init service
-terraform apply --auto-approve --var 'cluster=cluster'
 ```
-
-The `--var cluster=cluster` is us passing the name of the cluster that we
-created in the previous command. After that, you should have a service up and
-running.
 
 ## Disclaimer
 
