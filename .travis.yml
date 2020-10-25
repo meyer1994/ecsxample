@@ -8,6 +8,10 @@ python:
 services:
   - docker
 
+install:
+  - docker run -itd --name tf hashicorp/terraform
+  - sudo docker cp tf:/bin/terraform /bin/terraform
+
 script:
   - docker build .
-  - cd infra && make validate
+  - cd infra && terraform validate
