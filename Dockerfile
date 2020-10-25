@@ -3,7 +3,9 @@ FROM python:3.8-slim
 WORKDIR /app
 COPY . ./
 
-RUN apt update && apt install -y postgresql && rm -rf /var/lib/apt/lists/*
+RUN apt update \
+    && apt install -y postgresql-server-dev-all \
+    && rm -rf /var/lib/apt/lists/*
 RUN pip install -r requirements.txt
 
 EXPOSE 8000
