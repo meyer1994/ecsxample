@@ -17,3 +17,4 @@ script:
   - cd infra
   - terraform init
   - terraform validate
+  - terraform plan
