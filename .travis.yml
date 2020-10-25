@@ -14,4 +14,4 @@ install:
 
 script:
   - docker build .
-  - cd infra && terraform validate
+  - cd infra && terraform init && terraform validate
