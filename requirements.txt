@@ -1,4 +1,4 @@
 databases[postgresql]==0.4.1
-fastapi==0.61.2
+fastapi==0.62.0
 orm==0.1.5
 uvicorn==0.12.3
