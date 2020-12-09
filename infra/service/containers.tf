@@ -37,7 +37,7 @@ module "service" {
 
 
 module "db" {
-    source  = "git::https://github.com/cloudposse/terraform-aws-ecs-container-definition.git?ref=0.41.0"
+    source  = "git::https://github.com/cloudposse/terraform-aws-ecs-container-definition.git?ref=0.45.2"
 
     essential = true
 
