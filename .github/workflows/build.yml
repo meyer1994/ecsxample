@@ -1,0 +1,20 @@
+name: build
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+      - uses: hashicorp/setup-terraform@v1
+      - uses: docker/build-push-action@v2
+      - run: |
+          cd infra
+          terraform init
+          terraform validate
