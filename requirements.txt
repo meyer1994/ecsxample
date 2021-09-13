@@ -1,4 +1,4 @@
 databases[postgresql]==0.5.1
 fastapi==0.68.1
-orm==0.1.8
+orm==0.1.9
 uvicorn==0.15.0
